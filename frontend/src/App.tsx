@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const [server, setServer] = useState([{ name: "" }]);
   useEffect(() => {
-    fetch("http://localhost:997", { method: "GET" });
+    fetch("http://localhost:3001", { method: "GET" })
+      .then((res) => res.json())
+      .then((data) => setServer(data));
   }, []);
   return (
     <div className="App">
@@ -12,6 +15,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+          <br />
+          {server && `Hello World from server - ${server[0].name}`}
+          {console.log(server)}
         </p>
         <a
           className="App-link"
