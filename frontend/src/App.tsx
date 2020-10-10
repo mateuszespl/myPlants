@@ -1,32 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  const [server, setServer] = useState([{ name: "" }]);
-  useEffect(() => {
-    fetch("http://localhost:3001", { method: "GET" })
-      .then((res) => res.json())
-      .then((data) => setServer(data));
-  }, []);
+import { Router } from "components/Router/Router";
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-          <br />
-          {server && `Hello World from server - ${server}`}
-          {console.log(server)}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </main>
   );
-}
-
-export default App;
+};
