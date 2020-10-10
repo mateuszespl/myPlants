@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
 function App() {
   const [server, setServer] = useState([{ name: "" }]);
@@ -12,11 +10,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
           <br />
-          {server && `Hello World from server - ${server[0].name}`}
+          {server && `Hello World from server - ${server}`}
           {console.log(server)}
         </p>
         <a

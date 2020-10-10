@@ -4,7 +4,8 @@ const morgan = require("morgan");
 const app = express();
 const cors = require("cors");
 const connectDB = require("./db");
-const sneakers = require("./models/Sneaker");
+const productsRouter = require("./routes/products");
+const cartRouter = require("./routes/cart");
 
 // Server setup
 const port = process.env.PORT || 3000;
@@ -20,4 +21,6 @@ app.use(morgan("dev"));
 app.use(cors());
 
 // Routing
-app.get("/", (req, res) => sneakers.find((err, data) => res.json(data)));
+app.get("/", (req, res) => res.json("Hello from home"));
+app.use("/products", productsRouter);
+app.use("/cart", cartRouter);
