@@ -11,12 +11,10 @@ export const MainLayout: React.FC = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <StyledMainLayout>
+      <StyledMainLayout className="layoutWrapper">
         <ThemeProvider theme={mainTheme}>
           <Navbar />
-          Layout start
-          {children}
-          Layout end
+          <section className="content">{children}</section>
           <Aside />
         </ThemeProvider>
       </StyledMainLayout>

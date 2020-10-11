@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { Cart } from "views/Cart/Cart";
-import { Home } from "../../views/Home/Home";
+import Cart from "views/Cart";
+import Home from "views/Home";
 
 export const Router = () => {
   return (
