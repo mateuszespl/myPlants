@@ -18,8 +18,18 @@ const constants = {
   categoryList: {
     className: "categoryList",
     listData: ["Men", "Women", "Accesories"],
-    height: "25%",
-    margin: "2,5% 0 2,5% 0",
+    height: "30%",
+    margin: "15% 0 15% 0",
+  },
+  menuButton: {
+    className: "menuButton",
+    text: "Menu",
+    height: "10%",
+  },
+  hamburger: {
+    className: "hamburger",
+    openText: "Open",
+    closeText: "Close",
   },
 };
 
