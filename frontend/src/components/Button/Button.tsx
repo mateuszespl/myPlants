@@ -13,6 +13,7 @@ interface ButtonInterface {
   className: string;
   height?: string;
   menu?: boolean;
+  width?: string;
 }
 
 export const Button: React.FC<ButtonInterface> = ({
@@ -21,10 +22,16 @@ export const Button: React.FC<ButtonInterface> = ({
   text,
   className,
   height,
+  width,
   menu,
 }) => {
   return (
-    <StyledButton isLeft={icon && icon.isLeft} height={height} menu={menu}>
+    <StyledButton
+      isLeft={icon && icon.isLeft}
+      height={height}
+      width={width}
+      menu={menu}
+    >
       {icon && <span>{icon.iconSrc}</span>}
       <button
         className={className}

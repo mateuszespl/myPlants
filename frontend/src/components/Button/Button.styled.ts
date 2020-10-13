@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledButton = styled.div<{
   isLeft: boolean | undefined;
   height: string | undefined;
+  width: string | undefined;
   menu: boolean | undefined;
 }>`
   position: relative;
@@ -11,6 +12,8 @@ export const StyledButton = styled.div<{
     isLeft || menu ? "space-between" : "flex-start"};
   align-items: center;
   height: ${({ height }) => height};
+  width: ${({ width }) => width};
+  cursor: pointer;
 
   span {
     order: ${({ isLeft }) => (isLeft ? 0 : 1)};
@@ -18,6 +21,5 @@ export const StyledButton = styled.div<{
 
   button {
     all: unset;
-    cursor: pointer;
   }
 `;

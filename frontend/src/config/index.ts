@@ -25,6 +25,7 @@ const constants = {
     className: "menuButton",
     text: "Menu",
     height: "10%",
+    width: "100px",
   },
   hamburger: {
     className: "hamburger",

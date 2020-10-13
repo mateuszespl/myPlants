@@ -5,6 +5,7 @@ import Logo from "components/Logo";
 import { StyledNavbar } from "./Navbar.styled";
 import List from "components/List";
 import Button from "components/Button";
+import ListItem from "components/ListItem";
 
 export const Navbar: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ export const Navbar: React.FC = () => {
         text={constants.menuButton.text}
         handleClick={() => console.log("Im working")}
         height={constants.menuButton.height}
+        width={constants.menuButton.width}
         menu
       />
       <List

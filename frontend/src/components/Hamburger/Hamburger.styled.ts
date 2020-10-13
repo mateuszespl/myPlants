@@ -4,7 +4,6 @@ export const StyledHamburger = styled.div<{ isOpen: boolean }>`
   width: 35px;
   height: 14px;
   position: relative;
-  cursor: pointer;
   overflow: hidden;
 
   /* Static styling */
