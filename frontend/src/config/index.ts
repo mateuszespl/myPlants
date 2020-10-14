@@ -17,6 +17,11 @@ const constants = {
   },
   categoryList: {
     className: "categoryList",
+    text: {
+      fontSize: "${({theme}) => theme.fonts.l}",
+      fontWeight: "bold",
+      fontFamily: "{({theme}) => theme.fonts.secondary}",
+    },
     listData: ["Men", "Women", "Accesories"],
     height: "30%",
     margin: "15% 0 15% 0",
