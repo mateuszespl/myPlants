@@ -1,5 +1,6 @@
 import React from "react";
 
+import Link from "components/Link";
 import { StyledCollectionSlide } from "./CollectionSlide.styled";
 
 export const ColletionSlide: React.FC = () => {
@@ -11,6 +12,7 @@ export const ColletionSlide: React.FC = () => {
         <header>
           <h1>ON THE STREETS COLLECTION \\ 2020</h1>
         </header>
+        <Link to="/shop" />
       </div>
     </StyledCollectionSlide>
   );
