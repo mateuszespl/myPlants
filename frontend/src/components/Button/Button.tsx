@@ -32,7 +32,7 @@ export const Button: React.FC<ButtonInterface> = ({
       width={width}
       menu={menu}
     >
-      {icon && <span>{icon.iconSrc}</span>}
+      {icon && icon.isLeft && <span>{icon.iconSrc}</span>}
       <button
         className={className}
         data-testid={className}

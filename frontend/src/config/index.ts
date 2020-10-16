@@ -1,6 +1,6 @@
 const constants = {
   logo: {
-    text: "mySneakers",
+    text: "Y x SNEAKS",
     className: "logo",
   },
   navbar: {
@@ -18,12 +18,12 @@ const constants = {
   categoryList: {
     className: "categoryList",
     text: {
-      fontSize: "${({theme}) => theme.fonts.l}",
-      fontWeight: "bold",
+      fontSize: "${({theme}) => theme.fonts.m}",
+      fontWeight: "normal",
       fontFamily: "{({theme}) => theme.fonts.secondary}",
     },
     listData: ["Men", "Women", "Accesories"],
-    height: "30%",
+    height: "33%",
     margin: "15% 0 15% 0",
   },
   menuButton: {
