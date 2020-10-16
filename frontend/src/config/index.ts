@@ -37,6 +37,9 @@ const constants = {
     openText: "Open",
     closeText: "Close",
   },
+  collectionSlide: {
+    className: "collectionSlide",
+  },
 };
 
 export default constants;

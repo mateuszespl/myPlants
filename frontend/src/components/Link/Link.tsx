@@ -5,12 +5,13 @@ import { StyledLink } from "./Link.styled";
 
 interface LinkInterface {
   to: string;
+  text: string;
 }
 
-export const Link: React.FC<LinkInterface> = ({ to }) => {
+export const Link: React.FC<LinkInterface> = ({ to, text }) => {
   return (
     <StyledLink>
-      <RouterLink to={to} />
+      <RouterLink to={to}>{text}</RouterLink>
     </StyledLink>
   );
 };

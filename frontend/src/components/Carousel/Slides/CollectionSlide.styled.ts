@@ -23,10 +23,24 @@ export const StyledCollectionSlide = styled.div`
     }
   }
 
-  div {
+  > div {
     height: 50%;
     width: 49%;
-    padding: 50px 0 0 50px;
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0 50px 50px;
+
+    header {
+      h1 {
+        font-size: ${({ theme }) => theme.fonts.xxl};
+      }
+    }
+
+    a {
+      font-size: ${({ theme }) => theme.fonts.l};
+      font-family: ${({ theme }) => theme.fonts.condensed};
+      font-weight: bold;
+    }
   }
 `;
