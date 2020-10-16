@@ -24,7 +24,7 @@ export const StyledCollectionSlide = styled.div`
   }
 
   > div {
-    height: 50%;
+    height: 49%;
     width: 49%;
     display: flex;
     flex-direction: column;
