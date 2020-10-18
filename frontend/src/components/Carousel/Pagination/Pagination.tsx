@@ -8,7 +8,7 @@ interface PaginationInterface {
 
 export const Pagination: React.FC<PaginationInterface> = ({ currentSlide }) => {
   return (
-    <StyledPagination>
+    <StyledPagination currentSlide={currentSlide}>
       <p>{currentSlide} / 5</p>
       <span> </span>
       <span> </span>

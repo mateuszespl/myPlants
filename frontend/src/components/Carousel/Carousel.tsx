@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Mousewheel } from "swiper";
+import SwiperCore, { Mousewheel } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
@@ -14,9 +14,8 @@ import {
   PromoSlide,
   StoresSlide,
 } from "./Slides";
-import { updateCarousel } from "store/actionCreators";
 
-SwiperCore.use([Pagination, Mousewheel]);
+SwiperCore.use([Mousewheel]);
 
 interface CarouselInterface {
   updateCarousel: (currentSlide: number) => void;
@@ -29,7 +28,6 @@ export const Carousel: React.FC<CarouselInterface> = ({ updateCarousel }) => {
         mousewheel
         direction={"vertical"}
         slidesPerView={1}
-        pagination={{ type: "fraction" }}
         onSlideChange={({ realIndex }) => updateCarousel(realIndex + 1)}
       >
         <SwiperSlide>
