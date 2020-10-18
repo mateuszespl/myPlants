@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { StateProvider } from "store";
+import { Provider } from "react-redux";
 import Router from "components/Router";
+import { store } from "store/store";
 
 export const App = () => {
   return (
-    <StateProvider>
+    <Provider store={store}>
       <BrowserRouter>
         <Router />
       </BrowserRouter>
-    </StateProvider>
+    </Provider>
   );
 };
