@@ -1,3 +1,13 @@
+import { connect } from "react-redux";
 import { Pagination } from "./Pagination";
+import { updateCarousel } from "store/actionCreators";
 
-export default Pagination;
+const mapStateToProps = (state: { currentSlide: number }) => ({
+  currentSlide: state.currentSlide,
+});
+
+const mapDispatchToProps = {
+  updateCarousel,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Pagination);
