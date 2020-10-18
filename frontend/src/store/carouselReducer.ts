@@ -1,7 +1,7 @@
 import * as actionTypes from "./actionTypes";
 
 const initialState = {
-  currentSlide: 0,
+  currentSlide: 1,
 };
 
 export const carouselReducer = (state = initialState, action: any) => {
@@ -9,6 +9,6 @@ export const carouselReducer = (state = initialState, action: any) => {
     case actionTypes.CAROUSEL_UPDATE:
       return { ...state, currentSlide: action.currentSlide };
     default:
-      return new Error();
+      return state;
   }
 };
