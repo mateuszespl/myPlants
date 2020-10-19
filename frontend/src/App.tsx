@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import Router from "components/Router";
-import { store } from "store/store";
+import store from "store";
 
 export const App = () => {
   return (

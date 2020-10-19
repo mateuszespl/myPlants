@@ -1,1 +1,3 @@
-export let elo = "hej";
+import { store } from "./store";
+
+export default store;
