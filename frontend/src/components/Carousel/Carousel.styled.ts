@@ -9,5 +9,6 @@ export const StyledCarousel = styled.section`
   .swiper-wrapper {
     height: 100vh;
     width: 100%;
+    position: relative;
   }
 `;
