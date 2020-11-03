@@ -22,11 +22,14 @@ export const StyledStoresSlide = styled.div`
   div {
     position: relative;
     width: 33%;
-    height: 33%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     img {
       width: 100%;
-      height: 100%;
+      height: 60%;
       object-fit: cover;
       object-position: center center;
     }

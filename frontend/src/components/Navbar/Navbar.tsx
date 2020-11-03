@@ -4,7 +4,7 @@ import constants from "config";
 import Logo from "components/Logo";
 import { StyledNavbar } from "./Navbar.styled";
 import List from "components/List";
-import Button from "components/Button";
+import SocialMediaList from "components/SocialMediaList";
 
 export const Navbar: React.FC = () => {
   return (
@@ -20,20 +20,7 @@ export const Navbar: React.FC = () => {
         margin={constants.categoryList.margin}
         text={constants.categoryList.text}
       />
-      <Button
-        className={constants.menuButton.className}
-        text={constants.menuButton.text}
-        handleClick={() => console.log("Im working")}
-        height={constants.menuButton.height}
-        width={constants.menuButton.width}
-        menu
-      />
-      <List
-        className={constants.socialList.className}
-        listData={constants.socialList.listData}
-        height={constants.socialList.height}
-        margin={constants.socialList.margin}
-      />
+      <SocialMediaList />
     </StyledNavbar>
   );
 };

@@ -1,6 +1,6 @@
 const constants = {
   logo: {
-    text: "Y x SNEAKS",
+    text: "PLAN'ts",
     className: "logo",
   },
   navbar: {
@@ -22,7 +22,7 @@ const constants = {
       fontWeight: "normal",
       fontFamily: "{({theme}) => theme.fonts.secondary}",
     },
-    listData: ["Men", "Women", "Accesories"],
+    listData: ["Plants", "Pre Potted Plants", "Accesories"],
     height: "33%",
     margin: "15% 0 15% 0",
   },
