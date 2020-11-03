@@ -19,30 +19,35 @@ export const NewinSlide: React.FC = () => {
       >
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/1054787/pexels-photo-1054787.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img src="https://images.pexels.com/photos/1073069/pexels-photo-1073069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/6344/woman-legs-girl-grey.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img src="https://images.pexels.com/photos/1331734/pexels-photo-1331734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/4498553/pexels-photo-4498553.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img src="https://images.pexels.com/photos/2043739/pexels-photo-2043739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/2272752/pexels-photo-2272752.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img src="https://images.pexels.com/photos/1207966/pexels-photo-1207966.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/1054787/pexels-photo-1054787.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img src="https://images.pexels.com/photos/705911/pexels-photo-705911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className="header">
+        <header>
+          <h1>New ones</h1>
+        </header>
+      </div>
     </StyledNewinSlide>
   );
 };

@@ -12,7 +12,7 @@ export const StyledPromoSlide = styled.div`
     object-position: center center;
   }
 
-  div {
+  .header {
     position: absolute;
     bottom: 0;
     right: 0;
