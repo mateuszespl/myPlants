@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const StyledPagination = styled.div<{ currentSlide: number }>`
-  height: 75px;
-  margin: 50px 0 0 0;
+  height: 10%;
   position: relative;
 
   p {
     position: absolute;
+    font-size: ${({ theme }) => theme.fonts.l};
+    font-weight: bolder;
     top: ${({ currentSlide }) =>
       currentSlide === 1 ? 0 : `calc(${currentSlide - 1}*25%)`};
     right: 50px;

@@ -29,7 +29,7 @@ export const StyledStoresSlide = styled.div`
 
     img {
       width: 100%;
-      height: 60%;
+      height: 75%;
       object-fit: cover;
       object-position: center center;
     }

@@ -5,6 +5,7 @@ import Logo from "components/Logo";
 import { StyledNavbar } from "./Navbar.styled";
 import List from "components/List";
 import SocialMediaList from "components/SocialMediaList";
+import Text from "components/Text";
 
 export const Navbar: React.FC = () => {
   return (
@@ -15,10 +16,13 @@ export const Navbar: React.FC = () => {
       <Logo />
       <List
         className={constants.categoryList.className}
-        listData={constants.categoryList.listData}
+        listData={[
+          <Text text="Plants" component="h3" />,
+          <Text text="Pre Potted Plants" component="h3" />,
+          <Text text="Accesories" component="h3" />,
+        ]}
         height={constants.categoryList.height}
         margin={constants.categoryList.margin}
-        text={constants.categoryList.text}
       />
       <SocialMediaList />
     </StyledNavbar>

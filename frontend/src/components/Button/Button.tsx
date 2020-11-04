@@ -40,7 +40,7 @@ export const Button: React.FC<ButtonInterface> = ({
       >
         {text}
       </button>
-      {menu && <Hamburger isOpen={false} />}
+      {icon && !icon.isLeft && <span>{icon.iconSrc}</span>}
     </StyledButton>
   );
 };

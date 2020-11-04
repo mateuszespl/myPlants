@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAside = styled.aside`
-  width: 300px;
+  width: 250px;
   height: 100vh;
   background: ${({ theme }) => theme.colors.white};
   margin: 0 0 0 auto;

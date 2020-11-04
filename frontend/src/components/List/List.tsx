@@ -5,14 +5,10 @@ import { StyledList } from "./List.styled";
 
 interface ListInterface {
   className: string;
-  listData: string[];
-  height: string;
-  margin: string;
-  text?: {
-    fontSize?: string;
-    fontWeight?: string;
-    fontFamily?: string;
-  };
+  listData: any[];
+  height?: string;
+  margin?: string;
+  padding?: string;
 }
 
 export const List: React.FC<ListInterface> = ({
@@ -20,28 +16,19 @@ export const List: React.FC<ListInterface> = ({
   listData,
   height,
   margin,
-  text,
+  padding,
 }) => {
   return (
     <StyledList
+      padding={padding}
       className={className}
       data-testid={className}
       height={height}
       margin={margin}
     >
-      {listData.map((data) =>
-        text ? (
-          <Text
-            text={data}
-            fontSize={text.fontSize}
-            fontWeight={text.fontWeight}
-            fontFamily={text.fontFamily}
-            component={"h3"}
-          />
-        ) : (
-          <li key={data}>{data}</li>
-        )
-      )}
+      {listData.map((data) => (
+        <li key={data}>{data}</li>
+      ))}
     </StyledList>
   );
 };
