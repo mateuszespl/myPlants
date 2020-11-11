@@ -9,7 +9,7 @@ interface ButtonInterface {
     iconSrc: any;
     isLeft: boolean;
   };
-  text: string;
+  text?: string;
   className: string;
   height?: string;
   menu?: boolean;

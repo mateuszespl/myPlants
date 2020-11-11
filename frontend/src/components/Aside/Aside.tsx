@@ -21,21 +21,18 @@ export const Aside: React.FC = () => {
         listData={[
           <Button
             handleClick={() => ""}
-            text="Cart"
             className="cart"
             menu
             icon={{ iconSrc: <GrCart />, isLeft: false }}
           />,
           <Button
             handleClick={() => ""}
-            text="Search"
             className="search"
             menu
             icon={{ iconSrc: <GrSearch />, isLeft: false }}
           />,
           <Button
             handleClick={() => ""}
-            text="Profile"
             className="profile"
             menu
             icon={{ iconSrc: <MdInsertEmoticon />, isLeft: false }}
@@ -43,7 +40,7 @@ export const Aside: React.FC = () => {
         ]}
         height="45%"
         margin="0"
-        padding="50px 0 70px 0"
+        padding="0 0 150px 0"
       ></List>
       <Pagination />
       <ScrollSpan />

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledLogo = styled.div`
-  height: 7%;
+  height: 40%;
   position: relative;
 
   header {

@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
 export const StyledHamburger = styled.div<{ isOpen: boolean }>`
-  width: 35px;
-  height: 14px;
-  position: relative;
-  overflow: hidden;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 35px;
+    height: 14px;
+    position: relative;
+    overflow: hidden;
+  }
 
   /* Static styling */
-
   p {
     text-transform: uppercase;
     font-size: 10px;

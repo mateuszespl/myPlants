@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const StyledSocialMediaList = styled.ul`
   margin: auto 0 0 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  padding: 0 20px 0 0;
 
   & > svg {
     width: 0;
@@ -14,6 +15,7 @@ export const StyledSocialMediaList = styled.ul`
 
   li {
     list-style: none;
+    margin: 10px 0;
 
     a {
       color: unset;

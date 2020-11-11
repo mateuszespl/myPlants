@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const StyledAside = styled.aside`
-  width: 250px;
+  width: 100px;
+  overflow: hidden;
   height: 100vh;
   background: ${({ theme }) => theme.colors.white};
-  margin: 0 0 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 20px 0;
+  padding: 20px 0 20px 0;
+  margin: 0 20px 0 20px;
 `;

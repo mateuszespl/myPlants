@@ -10,13 +10,13 @@ export const StyledPagination = styled.div<{ currentSlide: number }>`
     font-weight: bolder;
     top: ${({ currentSlide }) =>
       currentSlide === 1 ? 0 : `calc(${currentSlide - 1}*25%)`};
-    right: 75px;
+    right: 45px;
     transform: translateY(-50%);
   }
 
   span {
     content: "";
-    width: 30px;
+    width: 15px;
     position: absolute;
     top: 0;
     right: 0;
@@ -37,7 +37,7 @@ export const StyledPagination = styled.div<{ currentSlide: number }>`
       top: 100%;
     }
     &:nth-of-type(${({ currentSlide }) => currentSlide}) {
-      width: 60px;
+      width: 30px;
     }
   }
 `;

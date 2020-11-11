@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 export const StyledScrollSpan = styled.div`
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 45%;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  margin: auto 0 0 0;
+
+  p {
+    white-space: nowrap;
+    margin: 0 10px;
+  }
 
   span {
     transform: rotate(90deg);
@@ -14,7 +20,7 @@ export const StyledScrollSpan = styled.div`
 
     svg {
       transform: rotate(-90deg);
-      font-size: 50px;
+      font-size: ${({ theme }) => theme.fonts.xxl};
     }
   }
 `;

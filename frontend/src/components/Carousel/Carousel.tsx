@@ -4,13 +4,7 @@ import SwiperCore, { Mousewheel } from "swiper";
 import "swiper/swiper.scss";
 
 import { StyledCarousel } from "./Carousel.styled";
-import {
-  ColletionSlide,
-  JournalSlide,
-  NewinSlide,
-  PromoSlide,
-  StoresSlide,
-} from "./Slides";
+import { ColletionSlide, NewinSlide, PromoSlide, StoresSlide } from "./Slides";
 
 SwiperCore.use([Mousewheel]);
 
@@ -38,9 +32,6 @@ export const Carousel: React.FC<CarouselInterface> = ({ updateCarousel }) => {
         </SwiperSlide>
         <SwiperSlide>
           <StoresSlide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <JournalSlide />
         </SwiperSlide>
       </Swiper>
     </StyledCarousel>

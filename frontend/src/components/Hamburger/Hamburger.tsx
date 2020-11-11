@@ -14,12 +14,16 @@ export const Hamburger: React.FC<HamburgerInterface> = ({ isOpen }) => {
       data-testid={constants.hamburger.className}
       isOpen={isOpen}
     >
-      <p>
-        {isOpen ? constants.hamburger.closeText : constants.hamburger.openText}
-      </p>
-      <span></span>
-      <span></span>
-      <span></span>
+      <div>
+        <p>
+          {isOpen
+            ? constants.hamburger.closeText
+            : constants.hamburger.openText}
+        </p>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </StyledHamburger>
   );
 };

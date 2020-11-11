@@ -9,8 +9,14 @@ export const StyledList = styled.ul<{
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: ${({ height }) => height};
   margin: ${({ margin }) => margin};
   padding: ${({ padding }) => padding};
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
