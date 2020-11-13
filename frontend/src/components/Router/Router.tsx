@@ -8,7 +8,10 @@ export const Router = () => {
   return (
     <Switch>
       <Route exact path={"/"} render={Home} />
-      <Route path={"/cart"} render={Cart} />
+      <Route path={"/plants"} render={Cart} />
+      <Route path={"/flowers"} render={Cart} />
+      <Route path={"/accesories"} render={Cart} />
+      <Route path={"/promo"} render={Cart} />
     </Switch>
   );
 };
