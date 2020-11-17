@@ -1,10 +1,14 @@
 import React from "react";
 
-export const Category = (props) => {
-  return (
-    <div>
-      Category route
-      {console.log(props)}
-    </div>
-  );
+import CategoryLayout from "layouts/CategoryLayout";
+
+interface CategoryInterface {
+  match: { params: { category: string } };
+}
+
+export const Category: React.FC<CategoryInterface> = ({ match }) => {
+  const {
+    params: { category },
+  } = match;
+  return <CategoryLayout>Category route to {category}</CategoryLayout>;
 };

@@ -10,10 +10,10 @@ export const Menu: React.FC = ({}) => {
       <List
         className="menu"
         listData={[
-          <Link to="/plants">Plants</Link>,
-          <Link to="/flowers">Flowers</Link>,
-          <Link to="/accesories">Accesories</Link>,
-          <Link to="/promo">Promo</Link>,
+          <Link to="category/plants">Plants</Link>,
+          <Link to="category/flowers">Flowers</Link>,
+          <Link to="category/accesories">Accesories</Link>,
+          <Link to="category/promo">Promo</Link>,
         ]}
       ></List>
     </StyledMenu>

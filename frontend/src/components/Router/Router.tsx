@@ -8,11 +8,9 @@ import Category from "views/Category";
 export const Router = () => {
   return (
     <Switch>
-      <Route exact path={"/"} render={Home} />
-      <Route path={"/category/:category"} render={Category} />
-      <Route path={"/flowers"} render={Cart} />
-      <Route path={"/accesories"} render={Cart} />
-      <Route path={"/promo"} render={Cart} />
+      <Route exact path={"/"} component={Home} />
+      <Route path={"/category/:category"} component={Category} />
+      <Route path={"/cart"} component={Cart} />
     </Switch>
   );
 };
