@@ -1,1 +1,2 @@
 export const CAROUSEL_UPDATE = "CAROUSEL_UPDATE";
+export const SET_MENU_STATUS = "SET_MENU_STATUS";

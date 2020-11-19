@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const StyledHamburger = styled.div<{ isOpen: boolean }>`
+export const StyledHamburger = styled.div<{ isMenuOpen: boolean }>`
   height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   div {
     width: 35px;
@@ -63,7 +64,7 @@ export const StyledHamburger = styled.div<{ isOpen: boolean }>`
     }
 
     span:nth-of-type(2) {
-      width: 0%;
+      width: 100%;
     }
 
     span:last-of-type {

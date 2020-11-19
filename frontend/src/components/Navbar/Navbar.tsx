@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
       data-testid={constants.navbar.className}
     >
       <Logo />
-      <Hamburger isOpen={true} />
+      <Hamburger />
       <SocialMediaList />
     </StyledNavbar>
   );

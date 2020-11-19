@@ -4,9 +4,13 @@ import List from "components/List";
 import { StyledMenu } from "./Menu.styled";
 import { Link } from "react-router-dom";
 
-export const Menu: React.FC = ({}) => {
+interface MenuInterface {
+  isMenuOpen: boolean;
+}
+
+export const Menu: React.FC<MenuInterface> = ({ isMenuOpen }) => {
   return (
-    <StyledMenu>
+    <StyledMenu isMenuOpen={isMenuOpen}>
       <List
         className="menu"
         listData={[
