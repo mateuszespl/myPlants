@@ -26,6 +26,33 @@ export const StyledCategories = styled.div`
           list-style: none;
           font-size: ${({ theme }) => theme.fonts.l};
 
+          a {
+            color: ${({ theme }) => theme.colors.black};
+            text-decoration: none;
+            position: relative;
+
+            &.active::after {
+              background: black;
+            }
+
+            &:hover::after {
+              background: black;
+            }
+
+            &::after {
+              content: "";
+              display: block;
+              width: 5px;
+              height: 5px;
+              background-color: transparent;
+              position: absolute;
+              left: -10px;
+              top: 50%;
+              transform: translateY(-50%);
+              transition: background-color 0.2s;
+            }
+          }
+
           &:first-of-type {
             margin: 20px 0 10px 0;
           }

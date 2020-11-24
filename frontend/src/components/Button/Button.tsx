@@ -1,4 +1,3 @@
-import Hamburger from "components/Hamburger";
 import React from "react";
 
 import { StyledButton } from "./Button.styled";

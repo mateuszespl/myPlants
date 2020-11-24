@@ -1,6 +1,5 @@
 import React from "react";
 
-import Text from "components/Text";
 import { StyledList } from "./List.styled";
 
 interface ListInterface {
@@ -26,8 +25,8 @@ export const List: React.FC<ListInterface> = ({
       height={height}
       margin={margin}
     >
-      {listData.map((data) => (
-        <li key={data}>{data}</li>
+      {listData.map((data, id) => (
+        <li key={`${data}:${id}`}>{data}</li>
       ))}
     </StyledList>
   );

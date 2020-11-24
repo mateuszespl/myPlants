@@ -19,27 +19,42 @@ export const NewinSlide: React.FC = () => {
       >
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/1073069/pexels-photo-1073069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img
+              alt="newinPic"
+              src="https://images.pexels.com/photos/1073069/pexels-photo-1073069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/1331734/pexels-photo-1331734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img
+              alt="newinPic"
+              src="https://images.pexels.com/photos/1331734/pexels-photo-1331734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/2043739/pexels-photo-2043739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img
+              alt="newinPic"
+              src="https://images.pexels.com/photos/2043739/pexels-photo-2043739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/1207966/pexels-photo-1207966.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+            <img
+              alt="newinPic"
+              src="https://images.pexels.com/photos/1207966/pexels-photo-1207966.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <img src="https://images.pexels.com/photos/705911/pexels-photo-705911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+            <img
+              alt="newinPic"
+              src="https://images.pexels.com/photos/705911/pexels-photo-705911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
           </div>
         </SwiperSlide>
       </Swiper>

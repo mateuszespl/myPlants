@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { StyledCategories } from "./Categories.styled";
 
-interface CategoriesInterface {}
+interface CategoriesInterface {
+  match: any;
+}
 
-export const Categories: React.FC<CategoriesInterface> = ({}) => {
+export const Categories: React.FC<CategoriesInterface> = ({ match }) => {
   const categories = [
     {
       main: "Plants",
@@ -25,20 +28,40 @@ export const Categories: React.FC<CategoriesInterface> = ({}) => {
       sub: ["All promo", "Promo plants", "Promo flowers", "Promo accesories"],
     },
   ];
+  const { url } = match;
   return (
     <StyledCategories>
       <ul className="categories">
         {categories.map((category, id) => (
-          <li>
+          <li key={`${category}:${id}`}>
             {category.main}
             <ul>
               {category.sub.map((subCategory, id) => (
-                <li>{subCategory}</li>
+                <li key={`${subCategory}:${id}`}>
+                  <Link
+                    className={
+                      url ===
+                      `/category/${category.main.toLowerCase()}/${subCategory
+                        .toLowerCase()
+                        .split(" ")
+                        .join("-")}`
+                        ? "active"
+                        : undefined
+                    }
+                    to={`/category/${category.main.toLowerCase()}/${subCategory
+                      .toLowerCase()
+                      .split(" ")
+                      .join("-")}`}
+                  >
+                    {subCategory}
+                  </Link>
+                </li>
               ))}
             </ul>
           </li>
         ))}
       </ul>
+      {console.log(match)}
     </StyledCategories>
   );
 };

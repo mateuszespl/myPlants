@@ -1,3 +1,4 @@
+import { withRouter } from "react-router-dom";
 import { Categories } from "./Categories";
 
-export default Categories;
+export default withRouter(Categories);

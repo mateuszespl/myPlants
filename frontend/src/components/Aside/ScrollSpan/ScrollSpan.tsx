@@ -4,7 +4,7 @@ import Text from "components/Text";
 import { StyledScrollSpan } from "./ScrollSpan.styled";
 import { BsArrowDown } from "react-icons/bs";
 
-export const ScrollSpan: React.FC = ({}) => {
+export const ScrollSpan: React.FC = () => {
   return (
     <StyledScrollSpan>
       <span>
