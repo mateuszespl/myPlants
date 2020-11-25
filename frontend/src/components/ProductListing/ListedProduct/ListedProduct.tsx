@@ -9,5 +9,14 @@ interface ListedProductInterface {
 export const ListedProduct: React.FC<ListedProductInterface> = ({
   product,
 }) => {
-  return <StyledListedProduct></StyledListedProduct>;
+  const { name, price, img, id } = product;
+  return (
+    <StyledListedProduct>
+      <p>{name}</p>
+      <p>{price}</p>
+      <a href={`/product/${id}`}>
+        <img alt={`${name}Pic`} src={img} />
+      </a>
+    </StyledListedProduct>
+  );
 };

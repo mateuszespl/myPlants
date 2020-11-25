@@ -10,7 +10,9 @@ export const Logo: React.FC = () => {
       data-testid={constants.logo.className}
     >
       <header>
-        <h2>{constants.logo.text}</h2>
+        <a href="/">
+          <h2>{constants.logo.text}</h2>
+        </a>
       </header>
     </StyledLogo>
   );
