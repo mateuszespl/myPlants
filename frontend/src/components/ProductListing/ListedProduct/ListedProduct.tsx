@@ -13,7 +13,7 @@ export const ListedProduct: React.FC<ListedProductInterface> = ({
   return (
     <StyledListedProduct>
       <p>{name}</p>
-      <p>{price}</p>
+      <p>{price} PLN</p>
       <a href={`/product/${id}`}>
         <img alt={`${name}Pic`} src={img} />
       </a>

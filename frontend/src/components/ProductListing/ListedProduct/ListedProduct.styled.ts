@@ -11,6 +11,22 @@ export const StyledListedProduct = styled.li`
 
   p {
     position: absolute;
+
+    &:first-of-type,
+    &:last-of-type {
+      top: 1vw;
+      left: 1vw;
+      width: calc(100% - 2vw);
+      background: ${({ theme }) => theme.colors.white};
+      padding: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &:last-of-type {
+      bottom: 1vw;
+      top: unset;
+    }
   }
 
   img {
