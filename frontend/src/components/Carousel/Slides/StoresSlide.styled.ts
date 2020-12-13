@@ -2,36 +2,37 @@ import styled from "styled-components";
 
 export const StyledStoresSlide = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: space-between;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 
-  > div {
-    header {
+  .stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+
+    div {
+      position: relative;
+      width: 33%;
       height: 100%;
       display: flex;
-      align-items: center;
-      h1 {
-        font-size: ${({ theme }) => theme.fonts.xxl};
+      flex-direction: column;
+      justify-content: space-around;
+
+      div {
+        position: absolute;
+        color: white;
       }
-    }
-  }
 
-  div {
-    position: relative;
-    width: 33%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    img {
-      width: 100%;
-      height: 75%;
-      object-fit: cover;
-      object-position: center center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
     }
   }
 `;

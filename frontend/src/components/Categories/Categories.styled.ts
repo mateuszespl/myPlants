@@ -12,7 +12,7 @@ export const StyledCategories = styled.div`
     & > li {
       list-style: none;
       font-weight: bold;
-      font-size: ${({ theme }) => theme.fonts.xl};
+      font-size: ${({ theme }) => theme.fonts.l};
 
       & > ul {
         display: flex;
@@ -24,7 +24,7 @@ export const StyledCategories = styled.div`
           margin: 10px 0;
           font-weight: normal;
           list-style: none;
-          font-size: ${({ theme }) => theme.fonts.l};
+          font-size: ${({ theme }) => theme.fonts.m};
 
           a {
             color: ${({ theme }) => theme.colors.black};
