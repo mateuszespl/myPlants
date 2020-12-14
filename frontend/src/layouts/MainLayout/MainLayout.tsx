@@ -14,8 +14,8 @@ export const MainLayout: React.FC = ({ children }) => {
       <GlobalStyle />
       <StyledMainLayout className="layoutWrapper">
         <ThemeProvider theme={mainTheme}>
-          <Menu />
           <Navbar />
+          <Menu />
           <section className="content">{children}</section>
           <Aside />
         </ThemeProvider>

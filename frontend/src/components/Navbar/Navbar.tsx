@@ -5,12 +5,18 @@ import Logo from "components/Logo";
 import { StyledNavbar } from "./Navbar.styled";
 import SocialMediaList from "components/SocialMediaList";
 import Hamburger from "components/Hamburger";
+import Menu from "components/Menu";
 
-export const Navbar: React.FC = () => {
+interface NavbarInterface {
+  isMenuOpen: boolean;
+}
+
+export const Navbar: React.FC<NavbarInterface> = ({ isMenuOpen }) => {
   return (
     <StyledNavbar
       className={constants.navbar.className}
       data-testid={constants.navbar.className}
+      isMenuOpen={isMenuOpen}
     >
       <Logo />
       <Hamburger />

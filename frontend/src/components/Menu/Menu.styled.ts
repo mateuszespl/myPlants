@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const StyledMenu = styled.div<{ isMenuOpen: boolean }>`
-  position: relative;
-  left: -30%;
-  width: 0;
+  position: absolute;
+  z-index: 2;
+  left: ${({ isMenuOpen }) => (isMenuOpen ? "-30px" : "-320px")};
+  top: 0;
+  width: 300px;
   height: 100%;
   background: ${({ theme }) => theme.colors.black};
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: left 0.2s, width 0s;
-
-  ${({ isMenuOpen }) => isMenuOpen && "left:0; width:30%;"}
+  transition: left 0.3s;
 
   ul {
     height: 50%;

@@ -17,8 +17,9 @@ export const Hamburger: React.FC<HamburgerInterface> = ({
       className={constants.hamburger.className}
       data-testid={constants.hamburger.className}
       isMenuOpen={isMenuOpen}
+      onClick={updateMenuStatus}
     >
-      <div onClick={updateMenuStatus}>
+      <div>
         <span></span>
         <span></span>
         <span></span>
