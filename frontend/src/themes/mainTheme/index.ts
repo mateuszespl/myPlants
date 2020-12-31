@@ -4,6 +4,7 @@ export const mainTheme = {
     secondary: "#F5F5F5",
     white: "#FFFFFF",
     black: "#313131",
+    transparentWhite: "rgba(255,255,255, 0.6)",
   },
   fonts: {
     main: "'Roboto', sans-serif",

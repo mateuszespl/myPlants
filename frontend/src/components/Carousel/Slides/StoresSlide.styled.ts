@@ -24,7 +24,21 @@ export const StyledStoresSlide = styled.div`
 
       div {
         position: absolute;
-        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 80%;
+        color: ${({ theme }) => theme.colors.black};
+        background: ${({ theme }) => theme.colors.white};
+
+        h2 {
+          font-family: ${({ theme }) => theme.fonts.condensed};
+          margin: 0 0 20px 0;
+        }
       }
 
       img {
