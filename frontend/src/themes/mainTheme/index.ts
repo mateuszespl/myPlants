@@ -5,6 +5,7 @@ export const mainTheme = {
     white: "#FFFFFF",
     black: "#313131",
     transparentWhite: "rgba(255,255,255, 0.6)",
+    transparentBlack: "rgba(0,0,0, 0.6)",
   },
   fonts: {
     main: "'Roboto', sans-serif",

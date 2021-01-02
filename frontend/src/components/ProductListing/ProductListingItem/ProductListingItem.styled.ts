@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledListedProduct = styled.li`
+export const StyledProductListingItem = styled.li`
   width: 18vw;
   height: 18vw;
   padding: 1vw;

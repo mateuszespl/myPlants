@@ -1,22 +1,22 @@
 import React from "react";
 
-import { StyledListedProduct } from "./ListedProduct.styled";
+import { StyledProductListingItem } from "./ProductListingItem.styled";
 
-interface ListedProductInterface {
+interface ProductListingItemInterface {
   product: any;
 }
 
-export const ListedProduct: React.FC<ListedProductInterface> = ({
+export const ProductListingItem: React.FC<ProductListingItemInterface> = ({
   product,
 }) => {
   const { name, price, img, id } = product;
   return (
-    <StyledListedProduct>
+    <StyledProductListingItem>
       <p>{name}</p>
       <p>{price} PLN</p>
       <a href={`/product/${id}`}>
         <img alt={`${name}Pic`} src={img} />
       </a>
-    </StyledListedProduct>
+    </StyledProductListingItem>
   );
 };

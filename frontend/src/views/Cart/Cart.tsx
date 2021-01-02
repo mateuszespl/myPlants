@@ -1,5 +1,7 @@
+import CartLayout from "layouts/CartLayout";
+
 import React from "react";
 
 export const Cart = () => {
-  return <div>Cart</div>;
+  return <CartLayout>Cart</CartLayout>;
 };
